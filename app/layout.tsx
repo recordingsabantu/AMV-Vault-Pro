@@ -1,25 +1,24 @@
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css"; // THIS LINE IS THE KEY TO BLENDING EVERYTHING
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "AMV Vault Pro - Abantü Recordings",
+  description: "Luxury Music Distribution Portal",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" style={{ backgroundColor: '#0F0908' }}>
-      <head>
-        <title>AMV VAULT PRO | Elite Distribution</title>
-        <style>{`
-          body { 
-            background-color: #0F0908 !important; 
-            color: #F5E8D8 !important; 
-            margin: 0; 
-            font-family: sans-serif; 
-          }
-          input, select, button { 
-            background: #1E1412 !important; 
-            border: 1px solid #C5A059 !important; 
-            color: white !important; 
-            border-radius: 8px; 
-            padding: 12px; 
-          }
-        `}</style>
-      </head>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${inter.className} bg-[#0F0908] text-white antialiased`}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
