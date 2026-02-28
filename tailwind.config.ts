@@ -1,19 +1,13 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   theme: {
     extend: {
       colors: {
-        'vault-gold': '#C5A059',
-        'vault-dark': '#0F0908',
-        'vault-brown': '#1E1412',
+        'dark-brown': '#3D2817',
+        'gold': '#D4AF37',
       },
     },
   },
+  variants: {},
   plugins: [],
 };
-export default config;
