@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "rc",
-    "react-dom": "rc",
+    "next": "15.0.0",
+    "react": "19.0.0-rc-6632edcf-20241024",
+    "react-dom": "19.0.0-rc-6632edcf-20241024",
     "lucide-react": "latest",
     "clsx": "latest",
     "tailwind-merge": "latest"
