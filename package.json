@@ -9,18 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.0.0",
-    "react": "19.0.0-rc-6632edcf-20241024",
-    "react-dom": "19.0.0-rc-6632edcf-20241024",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
     "lucide-react": "latest",
     "clsx": "latest",
     "tailwind-merge": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "typescript": "5.6.3",
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
     "postcss": "latest",
     "tailwindcss": "latest",
     "autoprefixer": "latest"
