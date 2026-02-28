@@ -1,6 +1,6 @@
 {
   "name": "amv-vault-pro",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,11 +14,7 @@
     "react-dom": "rc",
     "lucide-react": "latest",
     "clsx": "latest",
-    "tailwind-merge": "latest",
-    "stripe": "latest",
-    "payfast": "latest",
-    "resend": "latest",
-    "next-auth": "latest"
+    "tailwind-merge": "latest"
   },
   "devDependencies": {
     "typescript": "latest",
