@@ -10,21 +10,17 @@
   },
   "dependencies": {
     "next": "15.0.0",
-    "react": "19.0.0-rc-6632edcf-20241024",
-    "react-dom": "19.0.0-rc-6632edcf-20241024",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "lucide-react": "latest",
     "clsx": "latest",
-    "tailwind-merge": "latest",
-    "stripe": "^14.0.0",
-    "payfast": "^1.0.0",
-    "resend": "^3.0.0",
-    "next-auth": "latest"
+    "tailwind-merge": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "typescript": "5.0.0",
+    "@types/node": "20.0.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
     "postcss": "latest",
     "tailwindcss": "latest",
     "autoprefixer": "latest"
