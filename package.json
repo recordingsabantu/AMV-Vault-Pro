@@ -10,20 +10,23 @@
   },
   "dependencies": {
     "next": "15.0.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "tailwindcss": "latest",
-    "typescript": "latest",
+    "react": "19.0.0-rc-6632edcf-20241024",
+    "react-dom": "19.0.0-rc-6632edcf-20241024",
+    "lucide-react": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest",
     "stripe": "^14.0.0",
     "payfast": "^1.0.0",
     "resend": "^3.0.0",
-    "next-auth": "latest",
-    "lucide-react": "latest"
+    "next-auth": "latest"
   },
   "devDependencies": {
-    "@types/react": "latest",
+    "typescript": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "postcss": "latest",
+    "tailwindcss": "latest",
     "autoprefixer": "latest"
   }
 }
