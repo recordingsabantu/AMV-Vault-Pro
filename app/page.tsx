@@ -4,7 +4,7 @@ import { LayoutDashboard, Library, Wallet } from 'lucide-react';
 // These must match the folder you just made!
 import UploadForm from '../components/UploadForm'; 
 import MetadataForm from '../components/MetadataForm';
-
+ 
 export default function Page() {
   const gold = '#C5A059';
   const dark = '#0F0908';
