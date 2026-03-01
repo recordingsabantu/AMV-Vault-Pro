@@ -1,29 +1,36 @@
-import { Music, LayoutDashboard, BarChart3, ShieldCheck, LogOut } from 'lucide-react';
+import { BarChart3, TrendingUp, Music2, Users } from 'lucide-react';
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+export default function Dashboard() {
   return (
-    <div className="flex min-h-screen bg-[#1A110A]">
-      {/* SIDEBAR */}
-      <aside className="w-64 border-r border-[#D4AF37]/10 bg-black/40 p-6 flex flex-col">
-        <div className="mb-10">
-          <h2 className="text-[#D4AF37] font-bold tracking-tighter">AMV VAULT PRO</h2>
-          <p className="text-[10px] opacity-40">LIC: PA-DPIDA-2026022701-M</p>
+    <div className="space-y-8">
+      <header>
+        <h1 className="text-[#D4AF37] text-3xl font-bold">Artist Overview</h1>
+        <p className="opacity-60 text-sm italic">Welcome back to Abantü Recordings HQ</p>
+      </header>
+
+      {/* Stats Grid */}
+      <div className="grid md:grid-cols-4 gap-4">
+        <div className="bg-black/20 p-6 rounded-xl border border-[#D4AF37]/10 text-center">
+          <BarChart3 className="mx-auto mb-2 text-[#D4AF37]" size={20} />
+          <p className="text-xs opacity-50 uppercase tracking-widest">Total Streams</p>
+          <p className="text-2xl font-bold">0</p>
         </div>
-        
-        <nav className="flex-1 space-y-4">
-          <a href="/dashboard" className="flex items-center gap-3 text-[#D4AF37] bg-[#D4AF37]/10 p-3 rounded-lg"><LayoutDashboard size={20}/> Dashboard</a>
-          <a href="/dashboard/releases" className="flex items-center gap-3 opacity-60 hover:opacity-100 p-3"><Music size={20}/> Releases</a>
-          <a href="/dashboard/analytics" className="flex items-center gap-3 opacity-60 hover:opacity-100 p-3"><BarChart3 size={20}/> Analytics & Payouts</a>
-          <a href="/dashboard/license" className="flex items-center gap-3 opacity-60 hover:opacity-100 p-3"><ShieldCheck size={20}/> DDEX License</a>
-        </nav>
-
-        <button className="flex items-center gap-3 text-red-400 p-3 mt-auto"><LogOut size={20}/> Sign Out</button>
-      </aside>
-
-      {/* MAIN CONTENT */}
-      <main className="flex-1 p-10">
-        {children}
-      </main>
+        <div className="bg-black/20 p-6 rounded-xl border border-[#D4AF37]/10 text-center">
+          <TrendingUp className="mx-auto mb-2 text-[#D4AF37]" size={20} />
+          <p className="text-xs opacity-50 uppercase tracking-widest">Revenue (ZAR)</p>
+          <p className="text-2xl font-bold text-green-500">R0.00</p>
+        </div>
+        <div className="bg-black/20 p-6 rounded-xl border border-[#D4AF37]/10 text-center">
+          <Music2 className="mx-auto mb-2 text-[#D4AF37]" size={20} />
+          <p className="text-xs opacity-50 uppercase tracking-widest">Active Releases</p>
+          <p className="text-2xl font-bold">0</p>
+        </div>
+        <div className="bg-black/20 p-6 rounded-xl border border-[#D4AF37]/10 text-center">
+          <Users className="mx-auto mb-2 text-[#D4AF37]" size={20} />
+          <p className="text-xs opacity-50 uppercase tracking-widest">Artist Profiles</p>
+          <p className="text-2xl font-bold">1</p>
+        </div>
+      </div>
     </div>
   );
 }
