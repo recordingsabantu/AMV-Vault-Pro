@@ -1,7 +1,10 @@
-import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { clerkMiddleware } from "@clerk/nextjs/server";
 
-// This tells the guard: "Don't block anyone, just stay in the background"
-export default clerkMiddleware();
+// This version explicitly tells Clerk not to block any requests
+// which prevents the Edge Function from crashing if keys are being weird.
+export default clerkMiddleware((auth, request) => {
+  return; 
+});
 
 export const config = {
   matcher: [
