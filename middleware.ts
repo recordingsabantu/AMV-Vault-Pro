@@ -1,9 +1,7 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-// This empty middleware will stop the "Edge Function" from crashing
-export default clerkMiddleware(() => {
-  return; 
-});
+// This tells the guard: "Don't block anyone, just stay in the background"
+export default clerkMiddleware();
 
 export const config = {
   matcher: [
